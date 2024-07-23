@@ -34,7 +34,7 @@ UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main"
 
 if [[ $WRT_REPO != *"lede"* ]]; then
 	UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
-	UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main" "pkg"
+	# UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main" "pkg"
 fi
 
 
