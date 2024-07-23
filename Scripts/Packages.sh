@@ -37,9 +37,6 @@ if [[ $WRT_REPO != *"lede"* ]]; then
 	UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main" "pkg"
 fi
 
-if [[ $WRT_REPO == *"openwrt-6.x"* ]]; then
-	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
-fi
 
 #更新软件包版本
 UPDATE_VERSION() {
