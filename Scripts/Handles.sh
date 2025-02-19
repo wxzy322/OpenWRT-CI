@@ -31,7 +31,8 @@ if [ -d *"luci-theme-argon"* ]; then
 
 	cd $PKG_PATH && echo "theme-argon has been fixed!"
 fi
-
+# 连接数修改
+sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 #移除Shadowsocks组件
 PW_FILE=$(find ./ -maxdepth 3 -type f -wholename "*/luci-app-passwall/Makefile")
 if [ -f "$PW_FILE" ]; then
